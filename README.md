@@ -2,7 +2,7 @@
 
 ビンゴゲーム
 
-開発環境
+開発環境 : 
 Eclipse 4.6 Neon for Mac OS X / Java version 1.8.0_111
 
 
