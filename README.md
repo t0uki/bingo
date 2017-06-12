@@ -32,17 +32,17 @@
 パッケージ構成
 Bingo directory
 
-	L main
-	|   L Main.java
+	|-main
+	|   |_ Main.java
 	|
-	L proccess
-	|   L BingoSys.java
-	|   L Judg.java
+	|-proccess
+	|   |_ BingoSys.java
+	|   |_ Judg.java
 	|
-	L state
-	    L Already.java
-	    L Ball.java
-	    L Card.java
+	|-state
+	    |_ Already.java
+	    |_ Ball.java
+	    |_ Card.java
 
 説明
 
