@@ -2,7 +2,7 @@ package process;
 
 import state.Card;
 
-public class Judg {
+public class Judge {
 	int bingo;
 
 	// ボールと一致したら0へ変換
