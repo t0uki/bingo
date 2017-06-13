@@ -37,7 +37,7 @@ Bingo directory
 	|
 	|-proccess
 	|   |_ BingoSys.java
-	|   |_ Judg.java
+	|   |_ Judge.java
 	|
 	|-state
 	    |_ Already.java
@@ -55,7 +55,7 @@ Bingo directory
 	現在のカード、ボール、ビンゴおよびリーチの数を表示
 	途中終了処理
 
-	Judg.java
+	Judge.java
 	ビンゴ、リーチ判定
 	ビンゴカードの位置とボールの値が一致しているか判定
 
