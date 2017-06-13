@@ -9,14 +9,14 @@ import state.Card;
 public class BingoSys {
 	private Card card = new Card();
 	private Ball ball = new Ball();
-	private Judg judg = new Judg();
+	private Judge judge = new Judge();
 	private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	private String in;
 
 	public void play() {
 		// カード表示
 		System.out.println("+________________________+");
-		System.out.println("| BINGO : " + judg.bingo(card) + " | REACH : " + judg.reach(card) + "  |");
+		System.out.println("| BINGO : " + judge.bingo(card) + " | REACH : " + judge.reach(card) + "  |");
 		card.printCard();
 		// card.printDebug(); // Debug用
 		try {
@@ -36,12 +36,12 @@ public class BingoSys {
 				for (int i = 0; i < 5; i++) {
 					for (int j = 0; j < 5; j++) {
 						// ボールとカードの値が一致したら0をセット
-						card.setCard(judg.match(card.getCard()[i][j], num), i, j);
+						card.setCard(judge.match(card.getCard()[i][j], num), i, j);
 					}
 				}
 				// 現在のビンゴ、リーチ表示
 				System.out.println("+________________________+");
-				System.out.println("| BINGO : " + judg.bingo(card) + " | REACH : " + judg.reach(card) + "  |");
+				System.out.println("| BINGO : " + judge.bingo(card) + " | REACH : " + judge.reach(card) + "  |");
 				// カード表示
 				card.printCard();
 				// card.printDebug(); // Debug用
